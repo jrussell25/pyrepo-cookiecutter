@@ -1,3 +1,10 @@
+[build-system]
+{% if cookiecutter.version_control == 'setuptools-scm' -%}
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+{%- else -%}
+requires = ["setuptools>=45", "wheel"]
+{%- endif %}
+
 [tool.isort]
 profile = "black"
 src_paths = "{{cookiecutter.project_slug}}"
