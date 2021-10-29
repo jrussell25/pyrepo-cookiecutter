@@ -7,7 +7,6 @@
 # -- Path setup --------------------------------------------------------------
 
 import inspect
-
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -18,7 +17,7 @@ import subprocess
 import sys
 
 try:
-    from {{ cookiecutter.project_slug }} import __version__ as release
+    from {{cookiecutter.project_slug}} import __version__ as release
 except ImportError:
     release = "unknown"
 

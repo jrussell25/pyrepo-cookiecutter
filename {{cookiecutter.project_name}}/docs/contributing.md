@@ -65,4 +65,3 @@ tox -e doclive
 ```
 
 In a few seconds your web browser should open up the documentation. Now whenever you save a file the documentation will automatically regenerate and the webpage will refresh for you!
-
