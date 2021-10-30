@@ -113,7 +113,7 @@ copybutton_prompt_text = r">>> |\.\.\. "  # doctest
 
 # Settings for linkcheck
 linkcheck_anchors = False
-linkcheck_ignore = []
+linkcheck_ignore = []  # type: ignore
 
 execution_timeout = -1
 jupyter_execute_notebooks = "off"
@@ -225,4 +225,4 @@ def linkcode_resolve(domain, info):
 
     fn = os.path.relpath(fn, start=os.path.dirname("../{{ cookiecutter.project_slug }}"))
 
-    return f"https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/blob/main/{{ cookiecutter.project_slug }}/{fn}{linespec}"
+    return f"https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/blob/main/{{ cookiecutter.project_slug }}/{fn}{linespec}"  # noqa
