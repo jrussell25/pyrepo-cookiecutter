@@ -25,7 +25,7 @@ except ImportError:
 
 # -- Project information -----------------------------------------------------
 
-project = "cookiecutter.project_slug"
+project = "{{ cookiecutter.project_slug }}"
 copyright = "{% now 'local', '%Y' %}, {{ cookiecutter.full_name }}"
 author = "{{ cookiecutter.full_name }}"
 
