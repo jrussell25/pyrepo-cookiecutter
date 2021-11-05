@@ -16,7 +16,15 @@ convention = "numpy"
 add_select = ["D402","D415","D417"]
 
 [tool.pytest.ini_options]
-addopts = "-W error"
+testpaths = ["docs/examples", "tests"]
+addopts = [
+    "--current-env",
+    "--doctest-continue-on-failure",
+    "--doctest-modules",
+    "--ignore-glob=docs/examples/*.py",
+    "--mpl",
+    "--nbval",
+]
 
 [tool.mypy]
 files = "{{cookiecutter.project_slug}}"
