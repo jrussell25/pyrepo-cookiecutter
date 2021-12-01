@@ -1,7 +1,7 @@
 {
-  "full_name": "Ian Hunt-Isaak",
-  "email": "ianhuntisaak@gmail.com",
-  "github_username": "ianhi",
+  "full_name": "John Russell",
+  "email": "johncrussell25@gmail.com",
+  "github_username": "jrussell25",
   "project_name": "pyrepo",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "package description.",
